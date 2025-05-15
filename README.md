@@ -31,7 +31,7 @@ This script preprocesses a semicolon-separated file by:
 ## Script: `analysis.sh`
 
 ### Description
-Analyzes a tab-separated dataset of games to:
+Analyses a tab-separated dataset of games to:
 - Identify the most common game mechanic and domain
 - Calculate correlation between:
   - Year of publication and average rating
