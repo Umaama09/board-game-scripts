@@ -21,8 +21,6 @@ NR == 1 {
 }
 
 {
-    # Replace commas with dots already done in previous step
-    # Check and record max existing numeric ID
     if ($1 ~ /^[0-9]+$/) {
         id = int($1)
         if (id > max_id) {
