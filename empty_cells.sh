@@ -1,18 +1,7 @@
 #!/bin/bash
 
-if [ "$#" -ne 2 ]; then
-    echo "Usage: $0 <filename> <separator>"
-    echo "Example: $0 data.csv ';'"
-    exit 1
-fi
-
 filename="$1"
 separator="$2"
-
-if [ ! -f "$filename" ]; then
-    echo "Error: File '$filename' not found."
-    exit 1
-fi
 
 awk -v sep="$separator" '
 BEGIN {
